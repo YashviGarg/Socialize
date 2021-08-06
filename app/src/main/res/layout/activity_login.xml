@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login"
+    android:gravity="center">
+
+
+    <EditText
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:id="@+id/emailAddressTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:autofillHints="yashvigarg@gmail.com"
+        android:inputType="textEmailAddress"
+        android:hint="@string/enter_email" />
+
+    <EditText
+        android:layout_marginBottom="5pt"
+        android:id="@+id/passwordTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:autofillHints="password"
+        android:hint="@string/enter_password"
+        android:layout_marginRight="5pt"
+        android:layout_marginLeft="5pt"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginButtonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25pt"
+        android:layout_marginLeft="25pt"
+        android:layout_marginRight="25pt"
+        android:layout_marginBottom="8pt"
+        android:background="@color/teal_200"
+        android:hint="@string/login"
+        android:onClick="loginOnClick"
+        android:textColor="@color/white"
+        android:backgroundTint="#B2BAEA"
+        android:textSize="7pt" />
+    <Button
+        android:id="@+id/registerButtonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25pt"
+        android:layout_marginRight="25pt"
+        android:background="@color/teal_200"
+        android:hint="@string/register"
+        android:onClick="registerOnClick"
+        android:textColor="@color/white"
+        android:backgroundTint="#B2BAEA"
+        android:textSize="7pt" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:orientation="vertical">
+    <EditText
+        android:layout_margin="5pt"
+        android:id="@+id/nameTextRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_name" />
+
+    <EditText
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:id="@+id/emailAddressTextRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/enter_email" />
+
+    <EditText
+        android:layout_marginBottom="5pt"
+        android:id="@+id/passwordTextRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_password"
+        android:layout_marginRight="5pt"
+        android:layout_marginLeft="5pt"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:layout_marginTop="6pt"
+        android:id="@+id/profileImageRegister"
+        android:layout_width="120pt"
+        android:layout_height="120pt"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/contact"
+        android:layout_marginBottom="6pt"/>
+
+    <Button
+        android:id="@+id/loginButtonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10pt"
+        android:backgroundTint="#B2BAEA"
+        android:hint="@string/register"
+        android:onClick="registerOnClick"
+        android:textColor="@color/black"
+        android:textSize="7pt" />
+
+</LinearLayout>
